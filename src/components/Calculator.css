@@ -21,7 +21,6 @@
 .grid-item-0 {
   grid-column: 1 / -1;
   background-color: #858693;
-  border: none;
   padding-right: 0.5rem;
   font-size: 1.5rem;
   color: white;
