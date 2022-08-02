@@ -10,25 +10,24 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 500px;
   height: 400px;
+  justify-content: center;
 }
 
 .grid button {
-  border: 1px solid gray;
+  border: 1px solid #858693;
   cursor: pointer;
 }
 
 .grid-item-0 {
   grid-column: 1 / -1;
-  text-align: end;
   background-color: #858693;
   border: none;
-  padding-right: 0.2rem;
+  padding-right: 0.5rem;
   font-size: 1.5rem;
-}
-
-.grid-item-0::placeholder {
   color: white;
-  padding-right: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .grid-item-17 {

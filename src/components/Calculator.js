@@ -22,7 +22,7 @@ class Calculator extends React.Component {
     const { total, next } = this.state;
     return (
       <div className="grid">
-        <input className="grid-item-0" type="input" placeholder={next || total} />
+        <div className="grid-item-0">{next || total || 0}</div>
 
         <button onClick={this.handleEvent} className="grid-item-1" type="button">
           AC
