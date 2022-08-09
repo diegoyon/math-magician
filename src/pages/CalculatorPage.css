@@ -1,0 +1,9 @@
+.calculator-page {
+  display: flex;
+  gap: 2rem;
+  padding: 5rem;
+}
+
+.calculator-page h2 {
+  font-size: 2rem;
+}

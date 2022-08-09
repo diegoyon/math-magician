@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 1rem;
-  background-color: grey;
+  padding: 2rem 1rem;
+  background-color: rgb(75, 75, 75);
   align-items: center;
 }
 
@@ -16,6 +16,21 @@
   gap: 1rem;
 }
 
+.navLinks li a {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.navLinks li a:hover {
+  outline: 2px solid orange;
+}
+
 h1 {
   font-size: 2rem;
+  color: white;
+}
+
+.active {
+  background-color: orange;
 }
