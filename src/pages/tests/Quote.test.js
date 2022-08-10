@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Quote from '../Quote.js';
+import Quote from '../Quote';
 
 it('renders correctly', () => {
   const tree = renderer
