@@ -68,4 +68,24 @@ describe('calculate tests',() => {
   test("User pressed an operation after pressing '='", ()=>{
     expect(calculate({total: '6'}, '-')).toEqual({total:'6', operation:'-'})
   })
+
+  test("User pressed an operation button and there is an existing operation with total", ()=>{
+    expect(calculate({operation: 'x', total: '34'}, '-')).toEqual({operation: '-', total: '34'})
+  })
+
+  test("User pressed an operation button and there is an existing operation with no total", ()=>{
+    expect(calculate({operation: 'x'}, '+')).toEqual({operation: '+', total: 0})
+  })
+
+  test("User pressed an operation button and there is an existing operation with total and next", ()=>{
+    expect(calculate({operation: 'x', next: '10', total: '99'}, '+')).toEqual({operation: '+', total: '990', next: null})
+  })
+
+  test("The user hasn't typed a number yet, just save the operation", ()=>{
+    expect(calculate({}, '-')).toEqual({operation: '-'})
+  })
+
+  test("save the operation and shift 'next' into 'total'", ()=>{
+    expect(calculate({next: '678'}, '-')).toEqual({total: '678', next: null, operation:'-'})
+  })
 })
