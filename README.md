@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Math Magicians](https://)
+[Math Magicians](https://diegoyon.github.io/math-magician)
 
 ## Getting Started
 
