@@ -1,3 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  max-width: 80vw;
+}
+
 .quote {
-  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote p:nth-child(1) {
+  font-size: 2rem;
+}
+
+.quote p:nth-child(2) {
+  align-self: flex-end;
+  padding: 1rem;
+  font-style: italic;
+}
+
+.quote p:nth-child(2)::before {
+  content: "-";
+}
+
+.container button {
+  padding: 1rem 2rem;
+  width: fit-content;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s, color 1s;
+}
+
+.container button:hover {
+  background-color: white;
+  outline: 1px solid brown;
+  color: brown;
 }

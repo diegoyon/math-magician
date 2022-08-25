@@ -5,18 +5,14 @@ const Home = () => (
   <div className="home">
     <h2>Welcome to our page!</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing
-      elit. Voluptas id consequatur quasi iure libero ab
-      cumque vero quia sapiente inventore, ipsam voluptatem
-      dolorum eaque! Reiciendis iure nisi corporis ipsam
-      quidem.
+      This is a page where you can easily make some calculations
+      using the calculator provided. You can access the calculator
+      by clicking &quot;Calculator&quot; in the navbar.
     </p>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing
-      elit. Voluptas id consequatur quasi iure libero ab
-      cumque vero quia sapiente inventore, ipsam voluptatem
-      dolorum eaque! Reiciendis iure nisi corporis ipsam
-      quidem.
+      Additionally, you can read some random and interesting quotes
+      about math. Go ahead and click &quot;Quote&quot; in the navbar to read
+      an amazing quote!
     </p>
   </div>
 );
